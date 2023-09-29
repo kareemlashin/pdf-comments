@@ -1,0 +1,95 @@
+#pdfContainer {
+    text-align: center !important;
+}
+
+
+
+#wrap {
+    border: 15px solid #000;
+    margin: auto;
+    width: 65%;
+    overflow: hidden;
+}
+
+#pdfContainer .overlay {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.bullet {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    z-index: 99999;
+    cursor: not-allowed;
+}
+
+.signature {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    z-index: 66;
+}
+
+.overlay {
+    position: relative !important;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.overlay::after {
+    position: absolute;
+    content: "";
+    background-color: transparent;
+    inset: 0;
+}
+
+.container-comments {
+    background-color: red;
+    min-width: 200px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    cursor: auto;
+}
+
+.container-comments {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+textarea {
+    width: 90%;
+}
+
+.action__btn {
+    background-color: #fff;
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.comment {
+    text-align: justify;
+    overflow-wrap: break-word;
+    background: red;
+}
+
+.view {
+    background-color: red;
+    width: 25%;
+}
