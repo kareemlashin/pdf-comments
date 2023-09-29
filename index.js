@@ -128,7 +128,7 @@ function captureAndAppendToPDF() {
 		const element = overlay[index];
 		html2canvas(element).then((canvas) => {
 			const imgWidth = 208;
-			const imgHeight = (((canvas.height + canvas.height) / 1.7) * imgWidth) / canvas.width;
+			const imgHeight = (((canvas.height + canvas.height) / 1.75) * imgWidth) / canvas.width;
 			pdf.addImage(canvas.toDataURL("image/png"), "PNG", 0, 0, imgWidth, imgHeight);
 			if (index <= overlay.length - 2) {
 				pdf.addPage();
